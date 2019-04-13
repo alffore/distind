@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/distind.dir/main.c.o CMakeFiles/distind.dir/algoritmo.c.o CMakeFiles/distind.dir/cargadatos.c.o CMakeFiles/distind.dir/salida.c.o  -o distind 

@@ -1,0 +1,3 @@
+/home/alfonso/devel/distind/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alfonso/devel/distind/cmake-build-debug/CMakeFiles/distind.dir
+/home/alfonso/devel/distind/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -15,10 +15,10 @@
 #define DISTIND_DISTLOC_H
 
 
-#define CANT_TIPOS_OC 25
+#define CANT_TIPOS_OC 1
 
 //Definición de la estructura de Localidad
-struct Localidad{
+struct Localidad {
     int est;
     int mun;
     int loc;
@@ -42,10 +42,10 @@ struct Localidad{
 };
 
 typedef struct Localidad sLocalidad;
-typedef struct Localidad* PLocalidad;
+typedef struct Localidad *PLocalidad;
 
 
-struct Recurso{
+struct Recurso {
     int est;
     int mun;
     int loc;
@@ -65,16 +65,15 @@ struct Recurso{
 };
 
 typedef struct Recurso sRecurso;
-typedef struct Recurso* PRecurso;
+typedef struct Recurso *PRecurso;
 
 
-struct Diccionario{
+struct Diccionario {
     char nombre[22];
 };
 
 typedef struct Diccionario sDiccionario;
-typedef struct Diccionario* PDiccionario;
-
+typedef struct Diccionario *PDiccionario;
 
 
 #endif //DISTIND_DISTLOC_H

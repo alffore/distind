@@ -2,7 +2,9 @@
 // Created by alfonso on 12/04/19.
 //
 
+
 #include "distloc.h"
+
 
 extern PLocalidad ploc;
 extern PRecurso prec;

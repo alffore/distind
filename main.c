@@ -6,7 +6,7 @@
 
 extern void cargaArchivoLocs(char *);
 extern void cargaArchivoRecs(char *);
-extern void escribeSalida(void);
+extern void escribeSalida(char *,int);
 extern void calculoP(int);
 
 
@@ -20,6 +20,7 @@ PDiccionario pdic;
 
 int cantiloc;
 int cantirec;
+int epoca;
 
 //extern int indexIP[cantidadTiposOC+1];
 
@@ -38,13 +39,15 @@ int main(int cargs, char **args){
     int ii;
 
 
-    if(cargs<5){
+    if(cargs<7){
         fprintf(stderr, "No estan completos los parámetros:\n" );
-        fprintf(stderr, "\ndistlocrec.exe CantiLocs CantiRecs ArchivoLoc ArchivoRec\n\n" );
+        fprintf(stderr, "\ndistlocrec.exe CantiLocs CantiRecs ArchivoLoc ArchivoRec ArchivoSal Epoca\n\n" );
         fprintf(stderr, "\t CantiLocs:\tCantidad de localidades\n" );
         fprintf(stderr, "\t CantiRecs:\tCantidad de eventos\n" );
         fprintf(stderr, "\t ArchivoLoc:\tArchivo de localidades\n");
-        fprintf(stderr, "\t ArchivoRec:\tArchivo de recursos\n");
+        fprintf(stderr, "\t ArchivoRec:\tArchivo de eventos\n");
+        fprintf(stderr,"\t ArchivoSal:\tArchivo de salida\n");
+        fprintf(stderr,"\t Epoca:\tIdentificador de epoca\n");
         return 1;
     }
 
@@ -54,6 +57,8 @@ int main(int cargs, char **args){
     cantirec=atoi(*(args+2));
     char * archlocs=*(args+3);
     char * archrecs=*(args+4);
+    char * archsal= *(args+5);
+    epoca = atoi(*(args+6));
 
     pdic = (PDiccionario)malloc(sizeof(sDiccionario)*cantidadTiposOC);
 
@@ -110,7 +115,7 @@ int main(int cargs, char **args){
 
     }
 
-    escribeSalida();
+    escribeSalida(archsal,epoca);
 
 
     munmap(prec,sizeof(sRecurso)*cantirec);

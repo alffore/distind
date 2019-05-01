@@ -1,5 +1,11 @@
 /**
-*
+* @file main.c
+ *
+ * Código principal para la carga de datos de eventos en localidades y localidades del territorio nacional, permite la
+ * estimacion de la distancia promedio que recorre una persona para alcanzar una localidad con evento
+ *
+ * @autor AAFR <alffore@gmail.com>
+ * @date 15 de abril de 2019
 */
 #include "distloc.h"
 

@@ -1,7 +1,11 @@
 //
 // Created by alfonso on 12/04/19.
 //
-
+/**
+ * @file distloc.h
+ *
+ * Archivo con definiciones de las estructuras de datos
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

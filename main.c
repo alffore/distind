@@ -32,7 +32,8 @@ int epoca;
 
 
 /**
-*
+* Rutina principal, carga los parámetros y en su caso los inicializa, define los espacios compartidos de memoria y carga
+* la información
 */
 int main(int cargs, char **args){
 

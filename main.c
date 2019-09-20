@@ -4,6 +4,9 @@
  * Código principal para la carga de datos de eventos en localidades y localidades del territorio nacional, permite la
  * estimacion de la distancia promedio que recorre una persona para alcanzar una localidad con evento
  *
+ *  distind 304652 1115 /home/alfonso/NetBeansProjects/RENIC/utiles/indicadorPND/salidas/localidades.txt \
+ *  /home/alfonso/NetBeansProjects/RENIC/utiles/indicadorPND/salidas/e6_m15mil.txt /tmp/salida_e6.csv 6
+ *
  * @autor AAFR <alffore@gmail.com>
  * @date 15 de abril de 2019
 */
@@ -11,13 +14,13 @@
 
 
 extern void cargaArchivoLocs(char *);
-extern void cargaArchivoRecs(char *);
+extern void cargaArchivoEventos(char *);
 extern void escribeSalida(char *,int);
 extern void calculoP(int);
 
 
 const double RT=6371008.8;
-const int NumHilos=8;
+const int NumHilos=4;
 const int cantidadTiposOC=CANT_TIPOS_OC;
 
 PLocalidad ploc;
@@ -48,11 +51,11 @@ int main(int cargs, char **args){
 
     if(cargs<7){
         fprintf(stderr, "No estan completos los parámetros:\n" );
-        fprintf(stderr, "\ndistlocrec.exe CantiLocs CantiRecs ArchivoLoc ArchivoRec ArchivoSal Epoca\n\n" );
+        fprintf(stderr, "\ndistind.exe CantiLocs CantiEventos ArchivoLoc ArchivoEve ArchivoSal Epoca\n\n" );
         fprintf(stderr, "\t CantiLocs:\tCantidad de localidades\n" );
-        fprintf(stderr, "\t CantiRecs:\tCantidad de eventos\n" );
+        fprintf(stderr, "\t CantiEventos:\tCantidad de eventos\n" );
         fprintf(stderr, "\t ArchivoLoc:\tArchivo de localidades\n");
-        fprintf(stderr, "\t ArchivoRec:\tArchivo de eventos\n");
+        fprintf(stderr, "\t ArchivoEve:\tArchivo de eventos\n");
         fprintf(stderr,"\t ArchivoSal:\tArchivo de salida\n");
         fprintf(stderr,"\t Epoca:\tIdentificador de epoca\n");
         return 1;
@@ -80,7 +83,7 @@ int main(int cargs, char **args){
     if(prec!=NULL && ploc!=NULL){
 
         cargaArchivoLocs(archlocs);
-        cargaArchivoRecs(archrecs);
+        cargaArchivoEventos(archrecs);
 
 
         for (pos = 0; pos < NumHilos; ++pos) {

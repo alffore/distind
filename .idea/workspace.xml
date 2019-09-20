@@ -28,6 +28,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salida.c" beforeDir="false" afterPath="$PROJECT_DIR$/salida.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1POH4o3RJ6CNjefB2YLSFhKf8VQ" />
+  <component name="ProjectId" id="1R2O0xBL6C3upbrdmt9VYFQGxbU" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -93,12 +94,9 @@
       <workItem from="1555119832663" duration="7706000" />
       <workItem from="1555165671928" duration="2297000" />
       <workItem from="1555183733399" duration="2838000" />
-      <workItem from="1556641831575" duration="1258000" />
-      <workItem from="1557424093224" duration="1203000" />
-      <workItem from="1562266455421" duration="3249000" />
-      <workItem from="1565736802205" duration="19000" />
-      <workItem from="1565738063706" duration="1681000" />
-      <workItem from="1568768779469" duration="3248000" />
+      <workItem from="1568861506486" duration="1846000" />
+      <workItem from="1568949054744" duration="611000" />
+      <workItem from="1568950026096" duration="3009000" />
     </task>
     <servers />
   </component>

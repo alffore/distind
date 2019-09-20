@@ -2,6 +2,7 @@
   <dictionary name="alfonso">
     <words>
       <w>archivo</w>
+      <w>calculo</w>
       <w>cantidad</w>
       <w>cantiloc</w>
       <w>cantirec</w>
@@ -9,9 +10,13 @@
       <w>cargs</w>
       <w>epoca</w>
       <w>escribe</w>
+      <w>eventos</w>
+      <w>localidad</w>
       <w>localidades</w>
       <w>nomarch</w>
+      <w>nombre</w>
       <w>ploc</w>
+      <w>recurso</w>
       <w>salida</w>
       <w>tipos</w>
     </words>

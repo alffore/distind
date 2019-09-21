@@ -6,7 +6,7 @@
 
 extern void escribeSalida(char *, int);
 
-void escribeSalidaR(char *nomarch, int epoca);
+extern void escribeSalidaR(char *nomarch, int epoca);
 
 extern const double RT;
 extern PLocalidad ploc;
@@ -72,7 +72,7 @@ void escribeSalidaR(char *nomarch, int epoca) {
     dist_pp = RT * distpob / pob;
     dist_ps = RT * distancia / cantiloc;
 
-    fprintf(fh, "%lf,%lf,%lf,%lf,%lf, %d\n", pob, distpob, distancia, dist_pp, dist_ps,epoca);
+    fprintf(fh, "%lf,%lf,%lf,%lf,%lf,%d\n", pob, distpob, distancia, dist_pp, dist_ps,epoca);
 
     fclose(fh);
 }

@@ -12,7 +12,7 @@ extern PDiccionario pdic;
 extern const int cantidadTiposOC;
 
 extern void cargaArchivoLocs(char *);
-extern void cargaArchivoRecs(char *);
+extern void cargaArchivoEventos(char *);
 
 
 
@@ -89,7 +89,7 @@ void cargaArchivoLocs(char * archlocs){
 /**
 * Función que se encarga de cargar los recursos en la localidades
 */
-void cargaArchivoRecs(char * archrecs){
+void cargaArchivoEventos(char * archrecs){
 
     printf("Carga Recursos\n");
 

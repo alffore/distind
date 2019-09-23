@@ -2,36 +2,11 @@
   <dictionary name="alfonso">
     <words>
       <w>archivo</w>
-      <w>calculo</w>
       <w>cantidad</w>
-      <w>cantiloc</w>
-      <w>cantirec</w>
       <w>carga</w>
-      <w>cargs</w>
-      <w>distancia</w>
-      <w>distpob</w>
-      <w>epoca</w>
       <w>escribe</w>
-<<<<<<< HEAD
-      <w>eventos</w>
-      <w>localidad</w>
-=======
-      <w>función</w>
-      <w>hijo</w>
       <w>hilos</w>
->>>>>>> d3aae21f7822701c8f838143e931e360b2ee5676
-      <w>localidades</w>
-      <w>locs</w>
-      <w>nomarch</w>
-      <w>nombre</w>
-      <w>ploc</w>
-<<<<<<< HEAD
-      <w>recurso</w>
-=======
-      <w>resumen</w>
->>>>>>> d3aae21f7822701c8f838143e931e360b2ee5676
       <w>salida</w>
-      <w>termino</w>
       <w>tipos</w>
     </words>
   </dictionary>

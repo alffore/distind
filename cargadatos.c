@@ -115,6 +115,7 @@ void cargaArchivoEventos(char * archrecs){
     int i=0;
     while(fscanf(fh,"%d %d %d %lf %lf %s %d %d",&est,&mun,&loc,&lat,&lng,stipo,&tipo,&id)!=EOF){
 
+printf("%i: %d %d %d %lf %lf %s %d %d\n",i,est,mun,loc,lat,lng,stipo,tipo,id);
 
         latr=deg2rad(lat);
         lngr=deg2rad(lng);

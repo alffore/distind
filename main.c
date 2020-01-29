@@ -75,7 +75,7 @@ int main(int cargs, char **args) {
     char *archlocs = *(args + 3);
     char *archrecs = *(args + 4);
     char *archsal = *(args + 5);
-    epoca = atoi(*(args + 6));
+    epoca = 0 + atoi(*(args + 6));
     resumen = 0 + atoi(*(args + 7));
 
 

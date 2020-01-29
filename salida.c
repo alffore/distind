@@ -34,7 +34,7 @@ void escribeSalida(char *nomarch, int epoca) {
             m = (int) ((p->c[j] - e * 10000000) / 10000);
             l = p->c[j] - e * 10000000 - m * 10000;
             fprintf(fh, "%d,%d,%d,%s,%d,%lf,%d,%d,%d,%d,%d\n", p->est, p->mun, p->loc, (pdic + j)->nombre, p->pob,
-                    RT * p->dist[j], e, m, l, p->id, epoca);
+                    RT * p->dist[j], e, m, l, p->aid[j], epoca);
         }
 
     }

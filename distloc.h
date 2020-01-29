@@ -38,6 +38,9 @@ struct Localidad {
 
     int pob;
 
+    //id de los objetos
+    int aid[CANT_TIPOS_OC];
+    
     //distancias mínimas a recursos
     double dist[CANT_TIPOS_OC];
 

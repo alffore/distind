@@ -25,7 +25,7 @@ extern void calculoP(int);
 
 
 const double RT = 6371008.8;
-const int NumHilos = 2;
+const int NumHilos = 8;
 const int cantidadTiposOC = CANT_TIPOS_OC;
 
 PLocalidad ploc;

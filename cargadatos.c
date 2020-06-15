@@ -91,7 +91,7 @@ void cargaArchivoLocs(char * archlocs){
 */
 void cargaArchivoEventos(char * archrecs){
 
-    printf("Carga Recursos\n");
+    printf("Carga Eventos\n");
 
     int est;
     int mun;

@@ -21,7 +21,7 @@ extern const double RT;
 
 
 /**
-*
+* Función que busca la localidad con menor distancia 
 */
 void calculoP(int pos){
     int j;
@@ -46,7 +46,7 @@ void calculoP(int pos){
 }
 
 /**
-*
+* Función que calcula la distancia entre 2 puntos  
 */
 double distLocRec(PLocalidad p, PRecurso r){
     double d=(p->x*r->x);
